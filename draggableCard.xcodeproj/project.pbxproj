@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		557603191C6F05D200C4D319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557603181C6F05D200C4D319 /* AppDelegate.swift */; };
+		5576031B1C6F05D200C4D319 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576031A1C6F05D200C4D319 /* ViewController.swift */; };
+		5576031E1C6F05D200C4D319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5576031C1C6F05D200C4D319 /* Main.storyboard */; };
+		557603201C6F05D200C4D319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5576031F1C6F05D200C4D319 /* Assets.xcassets */; };
+		557603231C6F05D200C4D319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557603211C6F05D200C4D319 /* LaunchScreen.storyboard */; };
+		5576032E1C6F05D200C4D319 /* draggableCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576032D1C6F05D200C4D319 /* draggableCardTests.swift */; };
+		557603391C6F05D200C4D319 /* draggableCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557603381C6F05D200C4D319 /* draggableCardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5576032A1C6F05D200C4D319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5576030D1C6F05D200C4D319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557603141C6F05D200C4D319;
+			remoteInfo = draggableCard;
+		};
+		557603351C6F05D200C4D319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5576030D1C6F05D200C4D319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557603141C6F05D200C4D319;
+			remoteInfo = draggableCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		557603151C6F05D200C4D319 /* draggableCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = draggableCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		557603181C6F05D200C4D319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5576031A1C6F05D200C4D319 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5576031D1C6F05D200C4D319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5576031F1C6F05D200C4D319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		557603221C6F05D200C4D319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		557603241C6F05D200C4D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557603291C6F05D200C4D319 /* draggableCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = draggableCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5576032D1C6F05D200C4D319 /* draggableCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = draggableCardTests.swift; sourceTree = "<group>"; };
+		5576032F1C6F05D200C4D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557603341C6F05D200C4D319 /* draggableCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = draggableCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		557603381C6F05D200C4D319 /* draggableCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = draggableCardUITests.swift; sourceTree = "<group>"; };
+		5576033A1C6F05D200C4D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		557603121C6F05D200C4D319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557603261C6F05D200C4D319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557603311C6F05D200C4D319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5576030C1C6F05D200C4D319 = {
+			isa = PBXGroup;
+			children = (
+				557603171C6F05D200C4D319 /* draggableCard */,
+				5576032C1C6F05D200C4D319 /* draggableCardTests */,
+				557603371C6F05D200C4D319 /* draggableCardUITests */,
+				557603161C6F05D200C4D319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557603161C6F05D200C4D319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557603151C6F05D200C4D319 /* draggableCard.app */,
+				557603291C6F05D200C4D319 /* draggableCardTests.xctest */,
+				557603341C6F05D200C4D319 /* draggableCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		557603171C6F05D200C4D319 /* draggableCard */ = {
+			isa = PBXGroup;
+			children = (
+				557603181C6F05D200C4D319 /* AppDelegate.swift */,
+				5576031A1C6F05D200C4D319 /* ViewController.swift */,
+				5576031C1C6F05D200C4D319 /* Main.storyboard */,
+				5576031F1C6F05D200C4D319 /* Assets.xcassets */,
+				557603211C6F05D200C4D319 /* LaunchScreen.storyboard */,
+				557603241C6F05D200C4D319 /* Info.plist */,
+			);
+			path = draggableCard;
+			sourceTree = "<group>";
+		};
+		5576032C1C6F05D200C4D319 /* draggableCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				5576032D1C6F05D200C4D319 /* draggableCardTests.swift */,
+				5576032F1C6F05D200C4D319 /* Info.plist */,
+			);
+			path = draggableCardTests;
+			sourceTree = "<group>";
+		};
+		557603371C6F05D200C4D319 /* draggableCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				557603381C6F05D200C4D319 /* draggableCardUITests.swift */,
+				5576033A1C6F05D200C4D319 /* Info.plist */,
+			);
+			path = draggableCardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		557603141C6F05D200C4D319 /* draggableCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5576033D1C6F05D200C4D319 /* Build configuration list for PBXNativeTarget "draggableCard" */;
+			buildPhases = (
+				557603111C6F05D200C4D319 /* Sources */,
+				557603121C6F05D200C4D319 /* Frameworks */,
+				557603131C6F05D200C4D319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = draggableCard;
+			productName = draggableCard;
+			productReference = 557603151C6F05D200C4D319 /* draggableCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		557603281C6F05D200C4D319 /* draggableCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557603401C6F05D200C4D319 /* Build configuration list for PBXNativeTarget "draggableCardTests" */;
+			buildPhases = (
+				557603251C6F05D200C4D319 /* Sources */,
+				557603261C6F05D200C4D319 /* Frameworks */,
+				557603271C6F05D200C4D319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5576032B1C6F05D200C4D319 /* PBXTargetDependency */,
+			);
+			name = draggableCardTests;
+			productName = draggableCardTests;
+			productReference = 557603291C6F05D200C4D319 /* draggableCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		557603331C6F05D200C4D319 /* draggableCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557603431C6F05D200C4D319 /* Build configuration list for PBXNativeTarget "draggableCardUITests" */;
+			buildPhases = (
+				557603301C6F05D200C4D319 /* Sources */,
+				557603311C6F05D200C4D319 /* Frameworks */,
+				557603321C6F05D200C4D319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557603361C6F05D200C4D319 /* PBXTargetDependency */,
+			);
+			name = draggableCardUITests;
+			productName = draggableCardUITests;
+			productReference = 557603341C6F05D200C4D319 /* draggableCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5576030D1C6F05D200C4D319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ha1f;
+				TargetAttributes = {
+					557603141C6F05D200C4D319 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V723YSJ67H;
+					};
+					557603281C6F05D200C4D319 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V723YSJ67H;
+						TestTargetID = 557603141C6F05D200C4D319;
+					};
+					557603331C6F05D200C4D319 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V723YSJ67H;
+						TestTargetID = 557603141C6F05D200C4D319;
+					};
+				};
+			};
+			buildConfigurationList = 557603101C6F05D200C4D319 /* Build configuration list for PBXProject "draggableCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5576030C1C6F05D200C4D319;
+			productRefGroup = 557603161C6F05D200C4D319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557603141C6F05D200C4D319 /* draggableCard */,
+				557603281C6F05D200C4D319 /* draggableCardTests */,
+				557603331C6F05D200C4D319 /* draggableCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		557603131C6F05D200C4D319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557603231C6F05D200C4D319 /* LaunchScreen.storyboard in Resources */,
+				557603201C6F05D200C4D319 /* Assets.xcassets in Resources */,
+				5576031E1C6F05D200C4D319 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557603271C6F05D200C4D319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557603321C6F05D200C4D319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		557603111C6F05D200C4D319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5576031B1C6F05D200C4D319 /* ViewController.swift in Sources */,
+				557603191C6F05D200C4D319 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557603251C6F05D200C4D319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5576032E1C6F05D200C4D319 /* draggableCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557603301C6F05D200C4D319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557603391C6F05D200C4D319 /* draggableCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5576032B1C6F05D200C4D319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557603141C6F05D200C4D319 /* draggableCard */;
+			targetProxy = 5576032A1C6F05D200C4D319 /* PBXContainerItemProxy */;
+		};
+		557603361C6F05D200C4D319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557603141C6F05D200C4D319 /* draggableCard */;
+			targetProxy = 557603351C6F05D200C4D319 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5576031C1C6F05D200C4D319 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5576031D1C6F05D200C4D319 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		557603211C6F05D200C4D319 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557603221C6F05D200C4D319 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5576033B1C6F05D200C4D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5576033C1C6F05D200C4D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5576033E1C6F05D200C4D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = draggableCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.draggableCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5576033F1C6F05D200C4D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = draggableCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.draggableCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		557603411C6F05D200C4D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = draggableCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.draggableCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/draggableCard.app/draggableCard";
+			};
+			name = Debug;
+		};
+		557603421C6F05D200C4D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = draggableCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.draggableCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/draggableCard.app/draggableCard";
+			};
+			name = Release;
+		};
+		557603441C6F05D200C4D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = draggableCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.draggableCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = draggableCard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		557603451C6F05D200C4D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = draggableCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.draggableCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = draggableCard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		557603101C6F05D200C4D319 /* Build configuration list for PBXProject "draggableCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5576033B1C6F05D200C4D319 /* Debug */,
+				5576033C1C6F05D200C4D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5576033D1C6F05D200C4D319 /* Build configuration list for PBXNativeTarget "draggableCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5576033E1C6F05D200C4D319 /* Debug */,
+				5576033F1C6F05D200C4D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		557603401C6F05D200C4D319 /* Build configuration list for PBXNativeTarget "draggableCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557603411C6F05D200C4D319 /* Debug */,
+				557603421C6F05D200C4D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		557603431C6F05D200C4D319 /* Build configuration list for PBXNativeTarget "draggableCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557603441C6F05D200C4D319 /* Debug */,
+				557603451C6F05D200C4D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5576030D1C6F05D200C4D319 /* Project object */;
+}
