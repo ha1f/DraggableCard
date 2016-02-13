@@ -14,6 +14,7 @@
 		557603231C6F05D200C4D319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557603211C6F05D200C4D319 /* LaunchScreen.storyboard */; };
 		5576032E1C6F05D200C4D319 /* draggableCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576032D1C6F05D200C4D319 /* draggableCardTests.swift */; };
 		557603391C6F05D200C4D319 /* draggableCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557603381C6F05D200C4D319 /* draggableCardUITests.swift */; };
+		557603471C6F061300C4D319 /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557603461C6F061300C4D319 /* DraggableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		557603341C6F05D200C4D319 /* draggableCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = draggableCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557603381C6F05D200C4D319 /* draggableCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = draggableCardUITests.swift; sourceTree = "<group>"; };
 		5576033A1C6F05D200C4D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557603461C6F061300C4D319 /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				557603181C6F05D200C4D319 /* AppDelegate.swift */,
 				5576031A1C6F05D200C4D319 /* ViewController.swift */,
+				557603461C6F061300C4D319 /* DraggableImageView.swift */,
 				5576031C1C6F05D200C4D319 /* Main.storyboard */,
 				5576031F1C6F05D200C4D319 /* Assets.xcassets */,
 				557603211C6F05D200C4D319 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5576031B1C6F05D200C4D319 /* ViewController.swift in Sources */,
+				557603471C6F061300C4D319 /* DraggableImageView.swift in Sources */,
 				557603191C6F05D200C4D319 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
