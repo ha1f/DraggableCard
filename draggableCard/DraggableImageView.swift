@@ -76,17 +76,18 @@ class DraggableImageViewField: UIView {
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        UIView.animateWithDuration(0.5) {
-            self.draggingCard?.layer.position = self.startCardPosition!
-            self.draggingCard?.transform = CGAffineTransformMakeRotation(0)
+        if let card = draggingCard, let position = startCardPosition {
+            UIView.animateWithDuration(0.5) {
+                card.layer.position = position
+                card.transform = CGAffineTransformMakeRotation(0)
+            }
+            draggingCard = nil
+            startCardPosition = nil
         }
         startTouchPoint = nil
-        draggingCard = nil
-        startCardPosition = nil
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
         if let touch = touches.first {
             guard self.frame.contains(touch.locationInView(self)) else {
                 self.touchesEnded(Set(), withEvent: nil)
