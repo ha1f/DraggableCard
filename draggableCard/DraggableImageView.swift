@@ -8,7 +8,22 @@
 
 import UIKit
 
+@objc
+protocol DraggableViewFieldDelegate {
+    func transformForRelativePosition(relativePosition: CGPoint) -> CGAffineTransform
+    
+    optional func onSubviewTouched(view: UIView)
+}
+
+extension DraggableViewField: DraggableViewFieldDelegate {
+    func transformForRelativePosition(relativePosition: CGPoint) -> CGAffineTransform {
+        return CGAffineTransformMakeRotation(-relativePosition.x/800)
+    }
+}
+
 class DraggableViewField: UIView {
+    
+    var delegate: DraggableViewFieldDelegate?
     
     var isDragging: Bool {
         if let _ = touchStartPoint {
@@ -42,6 +57,7 @@ class DraggableViewField: UIView {
     }
     
     private func setup() {
+        self.delegate = self
         self.clipsToBounds = true
         self.multipleTouchEnabled = false
         self.userInteractionEnabled = true
@@ -55,11 +71,13 @@ class DraggableViewField: UIView {
     
     func startDragging(touch: UITouch) {
         // 上にあるものから順に検査
-        for card in self.subviews.reverse() {
+        for card in self.subviews.filter({$0.userInteractionEnabled == false}).reverse() {
             if card.frame.contains(touch.locationInView(self)) {
                 touchStartPoint = touch.locationInView(self)
                 draggingCard = card
                 originCardPosition = card.layer.position
+                
+                delegate?.onSubviewTouched?(card)
                 break
             }
         }
@@ -89,7 +107,7 @@ class DraggableViewField: UIView {
 
                 let vect = DraggableViewField.diffVector(startTouchPoint, to: touchPoint)
                 card.layer.position = DraggableViewField.addVector(originCardPosition, point2: vect)
-                draggingCard?.transform = CGAffineTransformMakeRotation(-vect.x/800)
+                card.transform = delegate?.transformForRelativePosition(vect) ?? CGAffineTransformMakeRotation(0)
             } else {
                 startDragging(touch)
             }
