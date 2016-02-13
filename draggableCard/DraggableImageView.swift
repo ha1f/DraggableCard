@@ -8,53 +8,43 @@
 
 import UIKit
 
-class DraggableImageView: UIView {
+class DraggableViewField: UIView {
     
-}
-
-extension CGRect {
-    func checkContain(point: CGPoint) -> Bool {
-        if (point.x >= self.minX) && (point.x <= self.maxX) && (point.y >= self.minY) && (point.y <= self.maxY) {
+    var isDragging: Bool {
+        if let _ = touchStartPoint {
             return true
-        } else {
-            return false
         }
-    }
-}
-
-extension CGPoint {
-    func vectTo(point: CGPoint) -> (x: CGFloat, y: CGFloat) {
-        return (point.x - self.x, point.y - self.y)
+        return false
     }
     
-    func advancedBy(x: CGFloat, y: CGFloat) -> CGPoint {
-        return CGPoint(x: self.x + x, y: self.y + y)
+    private static func addVector(point: CGPoint, point2: CGPoint) -> CGPoint {
+        return CGPoint(x: point.x + point2.x, y: point.y + point2.y)
     }
-}
-
-class DraggableImageViewField: UIView {
     
-    var startTouchPoint: CGPoint? = nil
-    var draggingCard: UIView? = nil
-    var startCardPosition: CGPoint? = nil
+    private static func diffVector(from: CGPoint, to: CGPoint) -> CGPoint {
+        return CGPoint(x: to.x - from.x, y: to.y - from.y)
+    }
     
-    var cards: [UIView] = []
+    private var touchStartPoint: CGPoint? = nil
+    private var draggingCard: UIView? = nil
+    private var originCardPosition: CGPoint? = nil
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.clipsToBounds = true
-        self.multipleTouchEnabled = false
-        self.userInteractionEnabled = true
+        print("frame")
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        print("coder")
+        setup()
     }
     
-    
-    func addCard(card: UIView) {
-        self.addSubview(card)
-        self.cards.append(card)
+    private func setup() {
+        self.clipsToBounds = true
+        self.multipleTouchEnabled = false
+        self.userInteractionEnabled = true
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -65,38 +55,40 @@ class DraggableImageViewField: UIView {
     
     func startDragging(touch: UITouch) {
         // 上にあるものから順に検査
-        for card in cards.reverse() {
+        for card in self.subviews.reverse() {
             if card.frame.contains(touch.locationInView(self)) {
-                startTouchPoint = touch.locationInView(self)
+                touchStartPoint = touch.locationInView(self)
                 draggingCard = card
-                startCardPosition = card.layer.position
+                originCardPosition = card.layer.position
                 break
             }
         }
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if let card = draggingCard, let position = startCardPosition {
+        if let card = draggingCard, let position = originCardPosition {
             UIView.animateWithDuration(0.5) {
                 card.layer.position = position
                 card.transform = CGAffineTransformMakeRotation(0)
             }
             draggingCard = nil
-            startCardPosition = nil
+            originCardPosition = nil
         }
-        startTouchPoint = nil
+        touchStartPoint = nil
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first {
-            guard self.frame.contains(touch.locationInView(self)) else {
+            // 外側ならタッチ終了させる
+            guard self.bounds.contains(touch.locationInView(self)) else {
                 self.touchesEnded(Set(), withEvent: nil)
                 return
             }
-            if let startTouchPoint = startTouchPoint, let card = draggingCard {
+            if let startTouchPoint = touchStartPoint, let card = draggingCard, let originCardPosition = originCardPosition {
                 let touchPoint = touch.locationInView(self)
-                let vect = startTouchPoint.vectTo(touchPoint)
-                card.layer.position = startCardPosition!.advancedBy(vect.x, y: vect.y)
+
+                let vect = DraggableViewField.diffVector(startTouchPoint, to: touchPoint)
+                card.layer.position = DraggableViewField.addVector(originCardPosition, point2: vect)
                 draggingCard?.transform = CGAffineTransformMakeRotation(-vect.x/800)
             } else {
                 startDragging(touch)
